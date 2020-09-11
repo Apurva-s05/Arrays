@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b;
+	cin>>a>>b;
+
+	cout<<"Values before swap"<<endl;
+	cout<<"a:"<<a<<"\tb:"<<b<<endl;        //Print values enter by user
+
+	a = a^b;
+	b = a^b;
+	a = a^b;
+
+	cout<<"Values after swap"<<endl;
+	cout<<"a:"<<a<<"\tb:"<<b<<endl;        //Print values after swap
+
+
+	return 0;
+}
+
+
+/*Explaination:
+a=3 and b=7
+	a = a^b;    3^7
+	b = a^b;    3^7^7 gives b=3
+	a = a^b;    3^7^3 gives a=7
+  */
