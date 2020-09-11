@@ -5,7 +5,8 @@ int main() {
 	int a,b;
 	cin>>a>>b;
 
-	cout<<"a:"<<a<<"\tb:"<<b<<endl;        //Print values enter by user
+	cout<<"Values before swap:"<<endl;
+	cout<<"a:"<<a<<"\tb:"<<b<<endl;        
 
 	int temp=0;                            //temp means any temporary variable
 
@@ -13,7 +14,8 @@ int main() {
 	a=b;
 	b=temp;
 
-	cout<<"a:"<<a<<"\tb:"<<b<<endl;        //Print values after swap
+	cout<<"Values after swap:"<<endl;
+	cout<<"a:"<<a<<"\tb:"<<b<<endl;        
 
 
 	return 0;
