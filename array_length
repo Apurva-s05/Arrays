@@ -15,10 +15,9 @@ int main() {
 	char name[100];
 
 	cout<<"Enter name:"<<endl;
-	cin>>name;
+	cin.getline(name,100);                
 	cout<<"Name is: "<<name<<endl;
 
     cout<<"Length is: "<<length(name)<<endl;
 	return 0;
 }
-
