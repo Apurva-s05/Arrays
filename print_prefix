@@ -1,0 +1,18 @@
+#include <iostream>
+#include<cstring>
+using namespace std;
+
+void printprefix(char str[]){
+	for(int end=0;str[end]!='\0';end++){
+		for(int start=0;start<=end;start++){
+			cout<<str[start];
+		}
+		cout<<endl;
+	}
+}
+
+int main() {
+	char str[]="abcd";
+	printprefix(str);
+	return 0;
+}
