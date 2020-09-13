@@ -1,0 +1,64 @@
+/*Program to use all inbuilt function*/
+
+#include <iostream>
+#include<cstring>
+using namespace std;
+
+int main() {
+
+	/*To print length of string*/
+	char str1[100];
+	cout<<"Enter name: "<<endl;
+	cin.getline(str1,100);
+	int len=strlen(str1);
+	cout<<"Length: "<<len<<endl;
+
+	/*To compare two strings*/
+	char str2[100];
+	char str3[100];
+	cout<<"enter string 2 and 3 to compare them: "<<endl;
+	cin>>str2>>str3;
+	if(strcmp(str2,str3)==0){
+		cout<<"Strings are equal"<<endl;
+	}else{
+		cout<<"Strings are not equal"<<endl;
+	}
+
+	/*To copy two strings*/
+	char str4[100]= "abcd";
+	char str5[100]= "pqr";
+
+	cout<<"Before copying:"<<endl;
+	cout<<str4<<endl;
+	cout<<str5<<endl;
+
+	/*strcpy(str4,str5);
+
+	cout<<"After copying:"<<endl;
+	cout<<str4<<endl;
+	cout<<str5<<endl;
+
+	To copy first three charachters only*/
+
+	strncpy(str4,str5,3);
+
+  cout<<"Copying first three characters only:"<<endl;
+	cout<<str4<<endl;
+	cout<<str5<<endl;
+
+	/*To concanitate two strings*/
+
+	char str6[100]= "ab";
+	char str7[100]= "cd";
+
+	cout<<"Before conact:"<<endl;
+	cout<<str6<<endl;
+	cout<<str7<<endl;
+
+	strcat(str6,str7);
+
+	cout<<"After concat:"<<endl;
+	cout<<str6<<endl;
+	cout<<str7<<endl;
+	return 0;
+}
